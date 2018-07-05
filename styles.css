@@ -1,0 +1,328 @@
+/* 
+ * Styles for the Rubiks Site
+ * Author: David Long;
+ * 
+ *
+ */
+
+/* Reset browser default margins, padding and list styles */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* set up some default styles
+We make use of one of our Google Web Fonts here too.
+See Google Fonts Step 4
+*/
+body {
+	background-color: #d0d2d8;
+	font-size: 12px;
+	color: #555;
+	font-family: 'Open Sans', sans-serif;
+	line-height: normal;
+}
+
+header {
+	padding: 10px;
+	/* overflow: hidden; prevents box collapsing if items inside are all floated */
+	overflow: hidden; 
+	/* We only set a min and max width rather than fixed width so the site will grow 
+	and shrink for different sized screens but not too far */
+	max-width: 980px; 
+	min-width: 480px;
+	/* center blocks by setting left and right margins to auto */
+	margin: 0 auto;
+	
+}
+header img {
+	float: left;
+}
+form#search {
+	float: right;
+	margin-top: 45px;
+	
+}
+form#search input {
+	/*  padding: top right bottom left */
+	padding: 2px 5px 2px 15px;
+	/* hex colours are RRGGBB */
+	border: 1px solid #666666;
+	border-top-width: 3px;
+	font-size: 16px;
+	border-radius: 15px;
+	font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
+	
+}
+
+/* Style the main navigation */
+nav#mainnav {
+	background-color: #000;
+	overflow: hidden;	
+}
+nav#mainnav ul {
+	max-width: 980px;
+	min-width: 480px;
+	margin: 0 auto;
+}
+nav#mainnav li {
+	display:inline-block;
+	float: left;
+	border-right: 1px solid #D0D2D8;
+	font-family: 'Oswald', sans-serif;
+}
+
+nav#mainnav a {
+	color: #D0D2D8;
+	text-decoration:none;
+	font-size: 16px;
+	padding: 10px;
+	display: block;
+	font-weight: normal;
+	
+}
+nav#mainnav li:first-of-type {
+	border-left: 1px solid #D0D2D8;
+}
+nav#mainnav a:hover {
+	color: white;
+}
+/* colour code main nav links */
+
+/* green */
+nav#mainnav .solve a {
+	border-top: 10px solid #00ae4c;
+}
+nav#mainnav .solve a:hover {
+	background-color: #00ae4c;
+}
+/* red */
+nav#mainnav .store a {
+	border-top: 10px solid #ed1a34;
+}
+nav#mainnav .store a:hover {
+	background-color: #ed1a34;
+}
+/* yellow */
+nav#mainnav .about a {
+	border-top: 10px solid #FFCC00;
+}
+nav#mainnav .about a:hover {
+	background-color: #FFCC00;
+}
+/* blue */
+nav#mainnav .blog a {
+	border-top: 10px solid #005eac;
+}
+nav#mainnav .blog a:hover {
+	background-color: #005eac;
+}
+
+/* Slider styles */
+#slider {
+	width: 100%;
+	position: relative;
+	display: block;
+	clear: both;
+}
+#slider .slide {
+	height: 470px;
+	position: relative;
+}
+#slider .slide.first  {
+	background: url('images/slider1.png') no-repeat 50% 0;
+}
+#slider .alignCenter {
+	max-width: 980px;
+	min-width: 480px;
+	margin: 0 auto;
+}
+
+#slider .caption {
+	position: absolute;
+	bottom: 0;
+	max-width: 980px;
+	
+}
+#slider .caption span {
+	background: #00365d;
+	opacity: 0.8;
+	color: white;
+	font-size: 28px;
+	display: inline-block;
+	padding: 4px 45px 4px 10px;
+	clear: both;
+	float: left;	
+	margin-bottom: 1px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* We use another google web font here */ 
+h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	color: #555;
+	/* use css3 generator to create the text shadow effect */
+	text-shadow: 0 1px 1px #FFFFFF;
+	text-align: center;
+	padding: 15px 0;
+	font-weight: normal;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+
+.discover {
+	max-width: 980px;
+	min-width: 380px;
+	margin: 0 auto;
+	clear: both;
+	border-bottom: 2px groove #D0D2D8;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+/* We make the boxes inside of .col-4 25% of the width */
+.columns.col-4 .box {
+	width: 25%;
+
+	margin: 5px 0;
+	float: left;
+}
+/* We add the margin to seperate the boxes on the a tag instead
+ of the box so that the box does not get bigger than 25% and no longer fit
+ */
+.columns.col-4 .box a {
+	display: block;
+	margin: 0 13px;
+	clear: both;
+	overflow: hidden;
+	color: #333;
+	text-decoration: none;
+}
+/* hover effect that makes the content of the 
+link partly transparent */
+.columns.col-4 .box a:hover {
+	opacity: 0.8;
+}
+
+/* make sure the image fills the box when it resizes */
+.columns.col-4 .box img {
+	width: 100%;
+}
+
+/* we fix the height of the captions so that all the boxes
+are the same height and each row lines up nicely */
+.columns.col-4 .box .caption {
+	height: 90px;
+	overflow: hidden;
+}
+
+.box p {
+	line-height: 1.3em;
+}
+
+h3 {
+	font-size: 18px;
+	text-align: left;
+	padding: 2px 0;
+	border-bottom: 1px solid #555;
+	margin-bottom: 4px;
+}
+
+.social {
+	display: block;
+	clear: both;
+	margin-bottom: 50px;
+	overflow: hidden;	
+}
+.social ul {
+	margin: 0 auto;
+	width: 290px;
+	
+	
+}
+
+.social ul li {
+float: left;	
+margin: 2px 10px;
+}
+
+/* 
+reverse of the hover effect on the boxes. 
+The social icons are partly transparent until
+you hover over them when they become opaque 
+*/
+.social ul li a img {
+	opacity: 0.8;
+}
+.social ul li a:hover img {
+	opacity: 1;	
+}
+
+footer {
+	background-color: #4c566c;
+	color: #d0d2d8;
+	padding: 15px 0;
+}
+footer ul {
+	overflow: hidden;
+	max-width: 760px;
+	min-width: 480px;
+	margin: 0 auto;
+}
+
+footer ul li {
+	float: left;
+	margin: 0 10px;
+	line-height: 1em;
+	padding: 5px 0;
+}
+
+footer a {
+	color: 	#d0d2d8;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;	
+}
+
+
+/* mobile device support */
+
+/* tablet portrait or mobile landscape */
+@media screen and (max-width: 640px) {
+/* all styles inside this media query will only apply 
+medium size screens */
+	.columns.col-4 .box {
+		width: 50%;
+	
+	}
+	footer ul li:nth-of-type(5n) {
+		clear: left;
+		background: red;
+		
+	}
+}
+
+/* mobile portrait */
+/* all styles inside this media query will only apply 
+small size screens */
+@media screen and (max-width: 400px) {
+	.columns.col-4 .box {
+	width: 100%;
+	max-width: 320px;
+	margin: 5px auto;
+	float: none;
+	clear: both;
+
+	}
+	footer ul li {
+		float: none;
+		clear: both;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+}

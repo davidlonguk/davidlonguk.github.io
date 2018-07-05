@@ -1,167 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
-	
-	<title>Fire Tech Camp 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700,500' rel='stylesheet' type='text/css'>
+    <head>
+        <!-- for better mobile support - add this after you have covered media queries -->
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
 
-	<link href="style.css" rel="stylesheet" type="text/css">
+        
+        <title>Rubiks Cube</title>
+        <!-- 
+        Custom Fonts: Using a Google Webfont by visiting
+        www.google.com/fonts 
+        After choosing the font(s) to use add them to the collection then click use (bottom right), customise options and then copy and paste the stylesheet link here.
+        Fonts used: Open Sans and Oswald
+        -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
 
-	
-</head>
-<body>
-	<nav id="main-nav">
+        <!-- Link to our stylesheet -->
+        <link type="text/css" rel="stylesheet" href="styles.css" />
 
-		<ul>
-			<li class="active"><a href="">Fire Tech</a></li>
-			<li><a href="#grid">Tutors</a></li>
-			<li><a href="students.html">Students</a></li>
-			<li><a href="images/lac-pool.jpg">Gallery</a></li>
-			<li><a href="">News</a></li>
-			<li><a href="">Contact us</a></li>
-		</ul>
-	</nav>
-	<div class="hero">
+    </head>
+    <body>
+        <!-- Grey Header Area -->
+        <header>
+            <!-- Logo with link to homepage -->
+            <a href="index.html">
+                <img src="images/rubiksLogo.png" alt="rubiks logo" />
+            </a>
+            
+            <!-- non-functioning search box example -->
+            <form id="search">
+                <input type="text" maxlength="50" value="Search" />
+            </form>
+        </header>
+        <!-- Black Nav Bar -->
+        <nav id="mainnav">
+            <!-- After creating the nav we add classes to each 
+            list item so we can colour them each differently -->
+            <ul>
+                <li class="solve"><a href="solveit.html">Solve It</a></li>
+                <li class="store"><a href="store.html">Store</a></li>
+                <li class="about"><a href="about.html">About Rubik's</a></li>
+                <li class="blog"><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
 
-		<div class="overlay">
-			<h1>The next generation of developers</h1>
-			<p><a href="">View the students</a></p>
+        <!-- 
+        If time this can be made into a slider but in this example
+        it is static
+         -->
+        <div id="slider">
+            <div class="slide first">
+                <div class="alignCenter">
+                    <div class="caption">
+                        <span>The New Rubik's Cube!</span>
+                        <span>No more peeling off the stickers</span>
+                        <span>And a new, smoother mechanism</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Discover: section -->
+        <section class="discover">
+            <h2>Discover</h2>
+            <!-- Using multiple classes on the same div
+            This is not a class called "columns col-4" it is 2 seperate classes
+            called "columns" and "col-4" they can be used as selectors seperately or together 
+            like this ".columns.col-4" -->
+            <div class="columns col-4">
 
-		</div>
-	</div>
-
-	<div class="row gradient">
-
-		<div class="one-third column">
-			<div class="content">
-				<h2>Bring ideas to life.</h2>
-				<p>Microsoft HoloLens is the first fully untethered, holographic computer, enabling you to interact with high-definition holograms in your world.</p>
-				<a class="video-link" href="">Watch the video</a>
-			</div>
-		</div>
-
-		<div class="two-thirds column">
-		  	<img src="images/wacom.png" alt="tablet">
-		</div>
-
-	</div>
-
-	<div class="row colorbox">
-		<h3>Learn to code, change the world</h3>
-		<p>Start with some HTML, then add some awesome CSS and Javascript special sauce to make the ultimate website</p>
-		<a class="button" href="">Start Creating</a>
-	</div>
-	
-	<a id="grid"></a>
-	<div class="grid row">
-		
-		<!-- START OF A TILE 1 -->
-		<div class="tile color1">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Some text goes here about this box and where it links to</p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-
-		<!-- START OF A TILE 2 -->
-		<div class="tile color2 image">
-			<img src="images/tile1.jpg" alt="sunny beach">
-			
-			<div class="content">
-				<h4>Image Box</h4>
-				<p>Rubber cheese monterey jack taleggio. Melted cheese cheesecake bocconcini airedale.</p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-		<!-- START OF A TILE 3 -->
-		<div class="tile color3">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Edam smelly cheese cottage cheese cheese strings cheese slices boursin fromage frais port-salut. </p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-		<!-- START OF A TILE 4 -->
-		<div class="tile color4 image">
-			<img src="images/tile2.jpg" alt="paris at night">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>When the cheese comes out everybody's happy </p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-
-		<!-- START OF A TILE 5 -->
-		<div class="tile color2">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Croque monsieur swiss blue castello. Stinking bishop cheese and biscuits lancashire cut the cheese who moved my cheese port-salut feta cheese on toast. </p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-
-		<!-- START OF A TILE 6 -->
-		<div class="tile color3">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Some text goes here about this box and where it links to</p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-		<!-- START OF A TILE 7 -->
-		<div class="tile color4">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Some text goes here about this box and where it links to</p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-		<!-- START OF A TILE 8 -->
-		<div class="tile color1">
-			<div class="content">
-				<h4>Latest News</h4>
-				<p>Some text goes here about this box and where it links to</p>
-				<a href="" class="button">Click me!</a>
-			</div>
-		</div>
-		<!-- END OF A TILE -->
-
-
-	</div>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script>
-
-$(document).ready(function(){
-
-	// create function to set the height = to the width
-	function tileSize() {
-		var tileWidth = $('.grid .tile').width();
-		$('.grid .tile').height(tileWidth + 'px');
-
-	}
-
-	// run tileSize when page first loads
-	tileSize();
-
-	// check if window has been resized and run tileSize
-	$(window).resize(function() {
-		tileSize();
-	});
-
-});
-
-
-</script>
-
-</body>
+                <!-- START OF BOX: Each box is a new column on a wide screen -->
+                <div class="box">
+                    <a href="#">
+                    <!-- images should all be the same aspect ratio
+    the example uses all square images -->
+                        <img src="images/box1.png" alt="You can do the Rubiks cube" />
+                        <div class="caption">
+                            <h3>Education Program</h3>
+                            <!-- & is a special character so we have to use &amp; in order to display it -->
+                            <p>Use the Rubik's Cube to teach STEM &amp; 21st Century Skills, create Mosaics and join/host a Competition</p>
+                        </div>
+                    </a> 
+                </div>
+                <!-- END OF BOX -->
+                
+                <!-- START OF BOX -->
+                <div class="box">
+                    <a href="#">
+                        <img src="images/box2.png" alt="You can do the Rubiks cube" />
+                        <div class="caption">
+                            <h3>Rubik's Fashion</h3>
+                            <p>Check out some cool Rubik'   s merchandise in our fashion store.</p>
+                        </div>
+                    </a> 
+                </div>
+                <!-- END OF BOX -->
+                
+                <!-- START OF BOX -->
+                <div class="box">
+                    <a href="#">
+                        <img src="images/box3.jpg" alt="You can do the Rubiks cube" />
+                        <div class="caption">
+                            <h3>PROMO CUBES FOR BUSINESS</h3>
+                            <p>Use the Rubik's Cube to teach STEM &amp; 21st Century Skills, create Mosaics and join/host a Competition</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- END OF BOX -->
+                
+                <!-- START OF BOX -->
+                <div class="box">
+                    <a href="#">
+                        <img src="images/box4.jpg" alt="You can do the Rubiks cube" />
+                        <div class="caption">
+                            <h3>Speed Cubing</h3>
+                            <p>Use the Rubik's Cube to teach STEM &amp; 21st Century Skills, create Mosaics and join/host a Competition</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- END OF BOX -->
+            </div>
+        </section>
+        <!-- Social links 
+            You can get social media icons from flaticon.com 
+        -->
+        <aside class="social">
+            <h2>Join In</h2>
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com" title="Visit our facebook page">
+                        <img src="images/facebook.gif" alt="facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" title="follow us on twitter">
+                        <img src="images/twitter.gif" alt="twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.gplus.com" title="Add us on G+">
+                        <img src="images/googleplus.gif" alt="google plus" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com" title="Visit our YouTube Channel">
+                        <img src="images/youtube.gif" alt="YouTube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:" title="Email us">
+                        <img src="images/email.gif" alt="email" />
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
+        <!-- Footer legal links-->
+        <footer>
+           <ul>
+                <li>
+                    <a href="">Legal</a>
+                </li>
+                <li>
+                    <a href="">Image Rights</a>
+                </li>
+                <li>
+                    <a href="">Media and Press</a>
+                </li>
+                <li>
+                    <a href="">Promotional</a>
+                </li>
+                <li>
+                    <a href="">Distributors</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+                <li>
+                    <a href="">Cubing Competitions</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="">Sitemap</a>
+                </li>
+           </ul> 
+        </footer>
+        
+    </body>
 </html>
