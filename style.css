@@ -1,0 +1,311 @@
+/* 
+* CSS Styles 
+* Author: David
+* Date: 2016-04-05;
+*/
+
+/* reset browser default margins and padding */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* misc styles */
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 2em;
+}
+
+
+body {
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	line-height: 1.3em;
+	font-weight: 500;
+}
+
+/* main navigation styles */
+#main-nav {
+	background: #0078D7;
+	overflow: hidden; /* to stop the box collapsing */
+}
+
+#main-nav li {
+	float: left;
+	list-style: none;
+	width: 16.66%;
+}
+
+#main-nav a {
+	color: #ffffff; /* RRGGBB 0 - 9 then a - f */
+	padding: 30px 0;
+	display: block;
+	text-align: center;
+ }
+
+ #main-nav a:hover {
+ 	background: #025597;
+ 	text-decoration: underline;
+ }
+
+/* hero styles */
+.hero {
+	background: url('images/hero2.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	height: 400px;
+	text-align: center;
+	position: relative;
+}
+.hero, .hero a {
+	color: white;
+
+}
+.hero .overlay {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	text-shadow: 1px 1px 6px #000000;
+	background: rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+.hero a {
+	font-size: 1.5rem;
+}
+
+/* ROW 1 STYLES */
+.row {
+	clear: both;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+.one-third {
+	width: 34%;
+}
+
+.two-thirds {
+	width: 66%;
+}
+.column {
+	float: left;
+}
+.column img { 
+	width: 100%;
+	display: block;
+}
+
+.row h2 { 
+	font-size: 4.5rem;
+	margin-bottom: 15px;
+	line-height: 1.2em;
+	font-weight: 400;
+}
+
+.content {
+	padding: 0 15%;
+}
+
+.row.gradient {
+	padding: 80px 0 30px 0;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 52%, rgba(238,238,238,1) 75%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 52%,rgba(238,238,238,1) 75%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 52%,rgba(238,238,238,1) 75%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+}
+
+.video-link {
+	color: #0078D7;
+	background: url('images/play.png') no-repeat 0 50%;
+	padding-left: 34px;
+	display: block;
+}
+
+
+.video-link:hover {
+	text-decoration: underline;
+}
+
+.colorbox {
+	background: #0078D7;
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin-bottom: 0.8em;
+}
+
+.colorbox .button {
+	color: #0078D7;
+	background: white;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.5em 1em;
+	margin: 1em auto;
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+/* Styles for our DofE based grid */
+
+.tile {
+	width: 25%;
+	height: 270px;
+	background: #D80C0C;
+	min-width: 200px;
+	text-align: center;
+	color: #fff;
+	float: left;
+}
+
+
+.tile h4 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+.tile .content {
+	padding: 8%;
+	width: 84%;
+	height: 84%;
+}
+
+.tile .button {
+	background: white;
+	color: #D80C0C;
+	text-align: center;
+}
+
+/* box 2 colors with CSS3 selector 
+.tile:nth-of-type(2) {
+	background: purple;
+}
+.tile:nth-of-type(2) .button {
+	color: purple;
+}
+
+*/
+
+/* box colors with classes */
+.tile.color1 {
+	background: #D80C0C;
+}
+.tile.color1 .button {
+	color: #D80C0C;
+}
+.tile.color2 {
+	background: #82c55b;
+}
+.tile.color2 .button {
+	color: #82c55b;
+}
+.tile.color3 {
+	background: #00aeef;
+}
+.tile.color3 .button {
+	color: #00aeef;
+}
+.tile.color4 {
+	background: #8c5ba6;
+	
+}
+.tile.color4 .button {
+	color: #8c5ba6;
+	
+}
+
+
+/* boxes with images */
+
+.tile img {
+	width: 100%;
+	height: 100%;
+}
+
+/* make the content box appear over images */
+.tile {
+	position: relative;
+}
+
+.tile .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	 
+}
+/* add a darken effect on tiles with images */
+.tile.image .content {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/* invert text color when light class is used */
+.tile.light {
+	color: black;
+}
+
+.tile {
+	overflow: hidden;
+}
+
+.tile:hover img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+/* fix buttons at bottom of box */
+.tile .button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Tablet and mobile styles */
+
+/* tablet landscape */
+@media screen and (max-width: 1000px) {
+	.one-third, .two-thirds, .tile {
+		width: 50%;
+	}
+
+}
+
+/* portrait tablet or landscape mobile */
+@media screen and (max-width: 768px) {
+	.one-third, .two-thirds  {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	.tile {
+		width: 50%;
+	}
+}
+
+/* mobile in portrait */
+@media screen and (max-width: 600px) {
+	.tile {
+		width: 100%;
+		float: none;
+	}
+}

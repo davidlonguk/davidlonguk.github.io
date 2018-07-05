@@ -1,239 +1,167 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Your Site Name</title>
-        
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        
-        <script src="jquery.js" type="text/javascript"></script>
-        <script>
-            $(function() {
-              $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                  if (target.length) {
-                    $('html,body').animate({
-                      scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                  }
-                }
-              });
-            });
-        </script>
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <nav id="mainnav">
-                    <ul>
-                        <li><a href="about.html">Coders</a></li>
-                        <li><a href="#bookmark1">Game</a></li>
-                        <li class="home"><a href="index.html"><span>Home</span></a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </nav>
-                
-            </header>
-            <div class="featured">
-                <h1>The World Needs Coders</h1>
-                
-                <div class="tiles-container">
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot1.jpg" alt="profile1" />
-                        </div>
-                        <strong>Tim</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot1.jpg" alt="fullsize" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot2.png" alt="profile: Archie" />
-                        </div>
-                        <strong>Archie</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot2.png" alt="Archie Large" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot3.jpg" alt="Mikael" />
-                        </div>
-                        <strong>Mikael</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot3.jpg" alt="Mikael" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot4.jpg" alt="profile1" />
-                        </div>
-                        <strong>Henry</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot4.jpg" alt="Henry" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot5.png" alt="Elias" />
-                        </div>
-                        <strong>Elias</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot5.png" alt="Elias" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot6.jpg" alt="Qays" />
-                        </div>
-                        <strong>Qays</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot6.jpg" alt="Qays" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot7.png" alt="David" />
-                        </div>
-                        <strong>David</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot7.png" alt="David" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot8.png" alt="Zaki" />
-                        </div>
-                        <strong>Zaki</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot8.png" alt="Zaki" />
-                        </div>
-                        
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot12.png" alt="John" />
-                        </div>
-                        <strong>John</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot12.png" alt="John" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="player-profile1.html">
-                        <div class="image-holder">
-                            <img src="images/headshot13.png" alt="Izzy" />
-                        </div>
-                        <strong>Izzy</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot13.png" alt="Izzy" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot14.png" alt="profile1" />
-                        </div>
-                        <strong>Profile</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot14.png" alt="Profile" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                <!-- Start of one tile -->
-                <div class="tile">
-                    <a href="">
-                        <div class="image-holder">
-                            <img src="images/headshot11.jpg" alt="Profile 2" />
-                        </div>
-                        <strong>Profile 2</strong>
-                        <div class="fullsize">
-                            <img src="images/headshot11.jpg" alt="Profile 2" />
-                        </div>
-                    </a>
-                </div><!-- END of ONE Tile -->
-                </div> <!-- END of tiles-container -->
-                
-                <!-- Video units -->
-                <div class="video videoLeft">
-                     <iframe width="280" height="158" src="https://www.youtube.com/embed/o1xthIJb2Ak?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    <div class="caption">Game Play</div>
-                </div>
-                
-                <div class="video videoRight">
-                     <iframe width="280" height="158" src="https://www.youtube.com/embed/CPv-s8Bx6iw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    <div class="caption">Cinematic Trailer</div>
-                </div><!-- video Units END -->
-            </div>
-            
-            <!-- Explore box contains a link to look deeper into the site -->
-            <div class="exploreBox">
-                
-                <a href="">Explore the code</a>
-                
-                
-            </div>
-            <!-- Making an anchor point to jump to -->
-            <a id="bookmark1"></a>
-            
-            
-            <!-- End of page links -->
-            <div class="pageEnd">
-                <a href="" class="button">Beta Sign Up</a>
-                
-                <a href="" class="link">Career opportunities</a>
-            </div>
-            
-            <!-- the main footer on all pages of site -->
-            <footer>
-                
-                <nav class="footerNav">
-                    
-                </nav>
-            </footer>
-            
-            
-            
-            
-            
-        </div><!-- End of container -->
-        
-        
-    </body>
-    
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	
+	<title>Fire Tech Camp 2.0</title>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700,500' rel='stylesheet' type='text/css'>
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	
+</head>
+<body>
+	<nav id="main-nav">
+
+		<ul>
+			<li class="active"><a href="">Fire Tech</a></li>
+			<li><a href="#grid">Tutors</a></li>
+			<li><a href="students.html">Students</a></li>
+			<li><a href="images/lac-pool.jpg">Gallery</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Contact us</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+
+		<div class="overlay">
+			<h1>The next generation of developers</h1>
+			<p><a href="">View the students</a></p>
+
+		</div>
+	</div>
+
+	<div class="row gradient">
+
+		<div class="one-third column">
+			<div class="content">
+				<h2>Bring ideas to life.</h2>
+				<p>Microsoft HoloLens is the first fully untethered, holographic computer, enabling you to interact with high-definition holograms in your world.</p>
+				<a class="video-link" href="">Watch the video</a>
+			</div>
+		</div>
+
+		<div class="two-thirds column">
+		  	<img src="images/wacom.png" alt="tablet">
+		</div>
+
+	</div>
+
+	<div class="row colorbox">
+		<h3>Learn to code, change the world</h3>
+		<p>Start with some HTML, then add some awesome CSS and Javascript special sauce to make the ultimate website</p>
+		<a class="button" href="">Start Creating</a>
+	</div>
+	
+	<a id="grid"></a>
+	<div class="grid row">
+		
+		<!-- START OF A TILE 1 -->
+		<div class="tile color1">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Some text goes here about this box and where it links to</p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+
+		<!-- START OF A TILE 2 -->
+		<div class="tile color2 image">
+			<img src="images/tile1.jpg" alt="sunny beach">
+			
+			<div class="content">
+				<h4>Image Box</h4>
+				<p>Rubber cheese monterey jack taleggio. Melted cheese cheesecake bocconcini airedale.</p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+		<!-- START OF A TILE 3 -->
+		<div class="tile color3">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Edam smelly cheese cottage cheese cheese strings cheese slices boursin fromage frais port-salut. </p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+		<!-- START OF A TILE 4 -->
+		<div class="tile color4 image">
+			<img src="images/tile2.jpg" alt="paris at night">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>When the cheese comes out everybody's happy </p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+
+		<!-- START OF A TILE 5 -->
+		<div class="tile color2">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Croque monsieur swiss blue castello. Stinking bishop cheese and biscuits lancashire cut the cheese who moved my cheese port-salut feta cheese on toast. </p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+
+		<!-- START OF A TILE 6 -->
+		<div class="tile color3">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Some text goes here about this box and where it links to</p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+		<!-- START OF A TILE 7 -->
+		<div class="tile color4">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Some text goes here about this box and where it links to</p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+		<!-- START OF A TILE 8 -->
+		<div class="tile color1">
+			<div class="content">
+				<h4>Latest News</h4>
+				<p>Some text goes here about this box and where it links to</p>
+				<a href="" class="button">Click me!</a>
+			</div>
+		</div>
+		<!-- END OF A TILE -->
+
+
+	</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+	// create function to set the height = to the width
+	function tileSize() {
+		var tileWidth = $('.grid .tile').width();
+		$('.grid .tile').height(tileWidth + 'px');
+
+	}
+
+	// run tileSize when page first loads
+	tileSize();
+
+	// check if window has been resized and run tileSize
+	$(window).resize(function() {
+		tileSize();
+	});
+
+});
+
+
+</script>
+
+</body>
 </html>
