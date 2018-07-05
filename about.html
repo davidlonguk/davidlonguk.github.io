@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About</title>
+        
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        
+        <script src="jquery.js" type="text/javascript"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+    </head>
+    <body id="about">
+        <div id="container">
+            <header>
+                <nav id="mainnav">
+                    <ul>
+                        <li><a href="about.html">Coders</a></li>
+                        <li><a href="#bookmark1">Game</a></li>
+                        <li class="home"><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            <div class="mainContent">
+                
+                My new content
+            </div>
+            <!-- Making an anchor point to jump to -->
+            <a id="bookmark1"></a>
+            
+            
+            <!-- End of page links -->
+            <div class="pageEnd">
+                <a href="" class="button">Beta Sign Up</a>
+                
+                <a href="" class="link">Career opportunities</a>
+            </div>
+            
+            <!-- the main footer on all pages of site -->
+            <footer>
+                
+                <nav class="footerNav">
+                    
+                </nav>
+            </footer>
+            
+            
+            
+            
+            
+        </div><!-- End of container -->
+        
+        
+    </body>
+    
+</html>
